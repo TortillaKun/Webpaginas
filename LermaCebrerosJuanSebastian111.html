@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Registro de Prestamo de Equipo</title>
+</head>
+
+<body>
+
+<center>
+<h1>Registro de Prestamo</h1>
+<h2>Control de Equipos</h2>
+</center>
+
+<form>
+
+<table border="1" width="100%" cellpadding="5">
+
+<tr>
+<th colspan="2">Informacion del solicitante</th>
+</tr>
+
+<tr>
+<td>Nombre completo</td>
+<td><input type="text" name="nombre"></td>
+</tr>
+
+<tr>
+<td>Matricula</td>
+<td><input type="text" name="matricula"></td>
+</tr>
+
+<tr>
+<td>Carrera</td>
+<td><input type="text" name="carrera"></td>
+</tr>
+
+<tr>
+<td>Tipo de usuario</td>
+<td>
+<input type="radio" name="tipo" value="alumno"> Alumno
+<input type="radio" name="tipo" value="profesor"> Profesor
+</td>
+</tr>
+
+
+<tr>
+<th colspan="2">Periodo de prestamo</th>
+</tr>
+
+<tr>
+<td>Fecha de salida</td>
+<td><input type="text" name="fecha_salida" placeholder="Ejemplo: 20/02/2026"></td>
+</tr>
+
+<tr>
+<td>Hora de salida</td>
+<td><input type="text" name="hora_salida" placeholder="Ejemplo: 10:30 AM"></td>
+</tr>
+
+<tr>
+<td>Fecha de entrega</td>
+<td><input type="text" name="fecha_entrega" placeholder="Ejemplo: 21/02/2026"></td>
+</tr>
+
+<tr>
+<td>Hora de entrega</td>
+<td><input type="text" name="hora_entrega" placeholder="Ejemplo: 12:00 PM"></td>
+</tr>
+
+<tr>
+<th colspan="2">Confirmacion</th>
+</tr>
+
+
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Guardar registro">
+<input type="reset" value="Limpiar">
+</td>
+</tr>
+
+</table>
+
+</form>
+
+</body>
+</html>
