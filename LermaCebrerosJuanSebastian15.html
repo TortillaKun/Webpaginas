@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse; 
+        font-family: Arial, sans-serif;
+        font-size: 11px;
+        border: 1px solid #000; 
+    }
+
+    th, td {
+        border: 1px solid #000;
+        height: 22px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .header {
+        background-color: #000;
+        color: white;
+        font-weight: normal;
+    }
+
+ 
+    .w-prestamo-cell {
+        padding: 0 !important;
+        border: 1px solid #000; 
+    }
+
+    .inner-table {
+        width: 100%;
+        height: 100%;
+        border-collapse: collapse;
+        border: none; 
+    }
+
+    .inner-table td {
+        border: none;
+        border-bottom: 1px solid #000; 
+        height: 22px;
+    }
+
+    .inner-table tr:last-child td {
+        border-bottom: none; 
+    }
+
+    .label-left {
+        text-align: left;
+        padding-left: 5px;
+    }
+
+    input[type="text"] {
+        border: none;
+        background: transparent;
+        font-size: 11px;
+        outline: none;
+        width: 95%;
+    }
+
+
+    .w-nombre { width: 30%; }
+    .w-carrera { width: 3.5%; }
+    .w-tipo { width: 4%; }
+    .w-prestamo { width: 25%; }
+    .w-tiempos { width: 14%; }
+</style>
+</head>
+<body>
+
+<table>
+    <tr class="header">
+        <th class="w-nombre">Nombre</th>
+        <th colspan="5">Carrera</th>
+        <th colspan="2">Alum/Profr</th>
+        <th class="w-prestamo">Préstamo</th>
+        <th class="w-tiempos">Hr. de préstamo</th>
+        <th class="w-tiempos">Hr. de entrega</th>
+    </tr>
+
+    <tr>
+        <td rowspan="3" class="w-nombre">
+            <input type="text" placeholder="Nombre">
+        </td>
+
+        <td>C</td><td>G</td><td>S</td><td>IP</td><td>IN</td>
+
+        <td class="w-tipo">A<br><input type="radio" name="t1"></td>
+        <td class="w-tipo">P<br><input type="radio" name="t1"></td>
+
+        <td rowspan="3" class="w-prestamo-cell">
+            <table class="inner-table">
+                <tr><td><input type="text"></td></tr>
+                <tr><td><input type="text"></td></tr>
+                <tr><td><input type="text"></td></tr>
+            </table>
+        </td>
+
+        <td class="label-left">Fecha: <input type="text" style="width:60%;"></td>
+        <td class="label-left">Fecha: <input type="text" style="width:60%;"></td>
+    </tr>
+
+    <tr>
+        <td colspan="5" rowspan="2" class="label-left">Grupo: <input type="text" style="width:50%;"></td>
+        <td rowspan="2"></td><td rowspan="2"></td>
+        <td class="label-left">Hora: <input type="text" style="width:60%;"></td>
+        <td class="label-left">Hora: <input type="text" style="width:60%;"></td>
+    </tr>
+
+    <tr>
+        <td class="label-left">Firma: <input type="text" style="width:60%;"></td>
+        <td class="label-left">Firma: <input type="text" style="width:60%;"></td>
+    </tr>
+</table>
+
+</body>
+</html>
