@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Registro de Prestamo de Equipo</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f2f6fb;
+}
+
+h1{
+    color: #003366;
+}
+
+h2{
+    color: #0055a5;
+}
+
+form{
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    text-align: left;
+    padding: 8px 0;
+    color: #003366;
+    border-bottom: 2px solid #0055a5;
+}
+
+td{
+    padding: 6px 0;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"]{
+    margin-right: 5px;
+}
+
+input[type="submit"],
+input[type="reset"]{
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]{
+    background-color: #0055a5;
+    color: white;
+}
+
+input[type="submit"]:hover{
+    background-color: #003366;
+}
+
+input[type="reset"]{
+    background-color: #cccccc;
+}
+
+input[type="reset"]:hover{
+    background-color: #999999;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1 align="center">Registro de Prestamo</h1>
+<h2 align="center">Control de Equipos</h2>
+
+<form>
+
+<table>
+
+<tr>
+<th colspan="2">Informacion del solicitante</th>
+</tr>
+
+<tr>
+<td>Nombre completo</td>
+<td><input type="text" name="nombre"></td>
+</tr>
+
+<tr>
+<td>Matricula</td>
+<td><input type="text" name="matricula"></td>
+</tr>
+
+<tr>
+<td>Carrera</td>
+<td><input type="text" name="carrera"></td>
+</tr>
+
+<tr>
+<td>Tipo de usuario</td>
+<td>
+<input type="radio" name="tipo" value="alumno"> Alumno
+<input type="radio" name="tipo" value="profesor"> Profesor
+</td>
+</tr>
+
+<tr>
+<th colspan="2">Periodo de prestamo</th>
+</tr>
+
+<tr>
+<td>Fecha de salida</td>
+<td><input type="text" name="fecha_salida"></td>
+</tr>
+
+<tr>
+<td>Hora de salida</td>
+<td><input type="text" name="hora_salida"></td>
+</tr>
+
+<tr>
+<td>Fecha de entrega</td>
+<td><input type="text" name="fecha_entrega"></td>
+</tr>
+
+<tr>
+<td>Hora de entrega</td>
+<td><input type="text" name="hora_entrega"></td>
+</tr>
+
+<tr>
+<th colspan="2">Confirmacion</th>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Guardar registro">
+<input type="reset" value="Limpiar">
+</td>
+</tr>
+
+</table>
+
+</form>
+
+</body>
+</html>
