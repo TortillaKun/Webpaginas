@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<style>
+form {
+  border-radius: 5px; /* redondea las esquinas del formulario*/
+  background-color: #ffffff; /* MODIFICA EL COLOR Y TAMANO DEL FROM PRINCIPAL */
+  padding: 20px; /* agregael sepacion entre borde del formulario y el comntenitdo*/
+}
+
+label {display: block;} /*Etiqueta laberl*/
+
+
+input[type=text], select {
+  width: 100%; /*Hace que el texto y los campos  ocupen todo el ancho disponible*/
+  padding: 12px;/*hace mas grande el caudro por dentro*/
+  margin: 8px 0;/*espacio arriba y abajo del formualrio */
+  display: inline-block;/*Permite que el objeto respete el tamanio y margenes*/
+  border: 1px solid #ccc; /*Modifica el tipo te texto tamanio y borde de         */
+  border-radius: 4px;/* modifica el tamanio de las esquinas del formulario*/
+  box-sizing: border-box; /*hace que no aunmetne el tamanio total del elemento*/
+}
+
+input[type=submit] {
+  width: 100%;/*Hace que el texto y los campos  ocupen todo el ancho disponible*/
+  background-color: red;/*color del boton*/
+  color: white;/*color del texto dentro del boton*/
+  padding: 14px;/*hace mas grande el caudro por dentro*/
+  margin: 8px 0;/*espacio arriba y abajo del formualrio */
+  border: none;
+  border-radius: 4px;/* modifica el tamanio de las esquinas del formulario*/
+  cursor: pointer;/* cambia el cursos a pasar el mause*/
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+</style>
+<body>
+
+<h2>Style an HTML Form with CSS</h2>
+
+<form action="/action_page.php">
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+  <label for="country">Country</label>
+  <select id="country" name="country">
+    <option value="australia">Australia</option>
+    <option value="canada">Canada</option>
+    <option value="usa">USA</option>
+  </select>
+  
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
