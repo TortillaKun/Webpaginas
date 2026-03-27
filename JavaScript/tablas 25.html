@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tablas de Multiplicar - Juan Sebastian Lerma Cebreros</title>
+    <style>
+        body { font-family: Arial; margin: 20px; }
+        #tablas { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px; }
+        .tabla { background: #f0f0f0; padding: 10px 15px; border-radius: 8px; }
+        .tabla h3 { margin: 0 0 5px; }
+    </style>
+</head>
+<body>
+    <h2>Juan Sebastian Lerma Cebreros</h2>
+    <button onclick="generarTablas()">Generar Tablas de Multiplicar</button>
+    <div id="tablas"></div>
+
+    <script>
+        function generarTablas() {
+            var contenido = "";
+            for (var i = 1; i <= 10; i++) {
+                contenido += "<div class='tabla'><h3>Tabla del " + i + "</h3>";
+                for (var j = 1; j <= 10; j++) {
+                    contenido += i + " x " + j + " = " + (i * j) + "<br>";
+                }
+                contenido += "</div>";
+            }
+            document.getElementById("tablas").innerHTML = contenido;
+        }
+    </script>
+</body>
+</html>
