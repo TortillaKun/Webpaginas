@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<p>Escriba su nombre y edad</p>
+
+<form onsubmit="verificar(); return false;">
+    <input type="text" id="nombre" required>
+    <input type="number" id="edad" required>
+    <button type="submit">Verificar</button>
+</form>
+
+<p id="resultado"></p>
+
+<script>
+function verificar() {
+    var n = document.getElementById("nombre").value;
+    var e = document.getElementById("edad").value;
+
+    if (e >= 18) {
+        document.getElementById("resultado").innerText = n + " puede votar.";
+    } else {
+        document.getElementById("resultado").innerText = n + " no puede votar";
+    }
+}
+</script>
+
+</body>
+</html>

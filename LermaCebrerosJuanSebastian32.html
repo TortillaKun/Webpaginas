@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<p>Escriba una puntuación 0 a 100</p>
+
+<form onsubmit="calcular(); return false;">
+    <input type="number" id="puntuacion" required>
+    <button type="submit">Calcular</button>
+</form>
+
+<p id="resultado"></p>
+
+<script>
+function calcular() {
+    var p = document.getElementById("puntuacion").value;
+
+    if (p >= 90) {
+        document.getElementById("resultado").innerText = "A";
+    } else if (p >= 80) {
+        document.getElementById("resultado").innerText = "B";
+    } else if (p >= 70) {
+        document.getElementById("resultado").innerText = "C";
+    } else if (p >= 60) {
+        document.getElementById("resultado").innerText = "D";
+    } else {
+        document.getElementById("resultado").innerText = "F";
+    }
+}
+</script>
+
+</body>
+</html>

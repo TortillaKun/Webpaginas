@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<p>Escriba sus nombres</p>
+
+<form onsubmit="generar(); return false;">
+    <input type="text" id="nombre" required>
+    <input type="text" id="apellido" required>
+    <button type="submit">Generar</button>
+</form>
+
+<p id="resultado"></p>
+
+<script>
+function generar() {
+    var n = document.getElementById("nombre").value;
+    var a = document.getElementById("apellido").value;
+
+    var usuario = (n + a).toLowerCase();
+    var iniciales = n[0].toUpperCase() + a[0].toUpperCase();
+
+    document.getElementById("resultado").innerText =
+        "Nombre de usuario: " + usuario + " Iniciales: " + iniciales;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<form onsubmit="verificar(); return false;">
+    <input type="number" id="numero" required>
+    <button type="submit">Verificar</button>
+</form>
+
+<p id="resultado"></p>
+
+<script>
+function verificar() {
+    var n = document.getElementById("numero").value;
+    if (n % 2 == 0) {
+        document.getElementById("resultado").innerText = "Par";
+    } else {
+        document.getElementById("resultado").innerText = "Impar";
+    }
+}
+</script>
+
+</body>
+</html>
